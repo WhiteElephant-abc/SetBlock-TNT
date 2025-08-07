@@ -14,7 +14,7 @@ execute at @a[gamemode=!spectator,gamemode=!creative,scores={health=5..}] run se
 execute at @a[gamemode=!spectator,gamemode=!creative,scores={health=1..4}] run setblock ~ ~-1 ~ redstone_block
 execute at @a[gamemode=!spectator,gamemode=!creative,scores={health=1..4}] run setblock ~ ~-2 ~ tnt
 
-execute as @a run function dfl:tick/things_to_xp {name:"tnt",xp:"1"}
+execute as @a at @s run function dfl:tick/things_to_xp {name:"tnt",xp:"1"}
 function dfl:tick/kill_tnt {num:"200"}
 execute at @a run function dfl:tick/change_block {new:"air",old:"fire",num:"30"}
 function dfl:lib/entity
